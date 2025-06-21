@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #b30000; /* Rojo oscuro */
+            color: white;
+        }
+        .custom-btn {
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .custom-btn:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Bienvenido al Sistema de Alquiler de Películas</h1>
+
+    <div class="row justify-content-center text-center">
+        <div class="col-md-3 mb-4">
+            <a href="/peliculas" class="btn btn-primary custom-btn w-100 mb-2"> Películas</a>
+            <img src="https://imgmedia.libero.pe/1200x630/libero/migration/imagen/2019/05/22/noticia-1558561795-cinemark-cartelera.jpg"
+                 alt="Películas destacadas" style="height: 200px;" class="img-fluid rounded">
+        </div>
+        <div class="col-md-3 mb-4">
+            <a href="/clientes/lista" class="btn btn-success custom-btn w-100 mb-2">Clientes</a>
+        </div>
+        <div class="col-md-3 mb-4">
+            <a href="/alquileres/lista" class="btn btn-warning custom-btn w-100 mb-2"> Alquiler de Peliculas</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © Juber2025
+</footer>
+
+</body>
+</html>
